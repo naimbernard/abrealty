@@ -7,7 +7,7 @@ export function Footer() {
     <footer className="bg-gold-soft px-6 pt-20 text-navy-deep sm:px-14">
       <div className="grid min-h-[260px] grid-cols-1 gap-10 pb-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
         <div>
-          <h2 className="font-heading text-3xl leading-tight font-light">
+          <h2 className="font-heading text-3xl leading-tight font-light tracking-[0.08em]">
             AB
             <br />
             REALTY

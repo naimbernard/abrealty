@@ -22,7 +22,7 @@ export function Header() {
     <header className="sticky top-0 z-50 flex h-20 items-center justify-between border-b-4 border-sand bg-navy-deep px-6 text-ivory sm:px-10">
       <Link
         href="/"
-        className="font-heading text-2xl font-bold tracking-tight sm:text-[28px]"
+        className="font-heading text-xl font-medium tracking-[0.12em] sm:text-2xl"
       >
         AB REALTY
       </Link>
