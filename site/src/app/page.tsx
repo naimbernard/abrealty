@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Hero } from "@/components/home/hero";
 import { TrustBar } from "@/components/home/trust-bar";
+import { InstagramRail } from "@/components/home/instagram-rail";
 import { FeaturedProperties } from "@/components/home/featured-properties";
 import { WhyInvest } from "@/components/home/why-invest";
 import { RequirementsTeaser } from "@/components/home/requirements-teaser";
@@ -29,6 +30,7 @@ export default function HomePage() {
       <JsonLd data={faqJsonLd(FAQ_ITEMS)} />
       <Hero />
       <TrustBar />
+      <InstagramRail />
       <FeaturedProperties />
       <WhyInvest />
       <RequirementsTeaser />

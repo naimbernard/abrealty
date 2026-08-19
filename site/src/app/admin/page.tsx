@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { getAllPropertiesForAdmin, getAllRequirementsForAdmin } from "@/lib/data";
 import { signOut } from "@/lib/actions";
+import { isInstagramConnected, buildInstagramAuthorizeUrl } from "@/lib/instagram";
 import { Button } from "@/components/ui/button";
 import { PropertyForm } from "@/components/admin/property-form";
 import { PropertyList } from "@/components/admin/property-list";
 import { RequirementForm } from "@/components/admin/requirement-form";
 import { RequirementList } from "@/components/admin/requirement-list";
+import { InstagramRefreshButton } from "@/components/admin/instagram-refresh-button";
 
 export const dynamic = "force-dynamic";
 
@@ -47,6 +49,34 @@ export default async function AdminPage() {
           <h2 className="font-heading text-2xl">Requirements Board</h2>
           <RequirementForm />
           <RequirementList requirements={requirements} />
+        </div>
+
+        <div>
+          <h2 className="font-heading text-2xl">Instagram Feed</h2>
+          <div className="mt-6 rounded-2xl border border-black/10 bg-white p-6 shadow-[0_10px_28px_rgba(0,0,0,0.05)]">
+            {isInstagramConnected() ? (
+              <>
+                <p className="mb-4 text-sm text-muted-foreground">
+                  Connected — the homepage pulls your latest posts automatically.
+                  Instagram tokens expire after 60 days, so refresh this every
+                  couple of months.
+                </p>
+                <InstagramRefreshButton />
+              </>
+            ) : (
+              <>
+                <p className="mb-4 text-sm text-muted-foreground">
+                  Not connected yet. Requires a one-time setup in the Meta
+                  Developer console first — see{" "}
+                  <code className="rounded bg-sand px-1.5 py-0.5">README.md</code>{" "}
+                  for the steps. Once the app is configured, connect here:
+                </p>
+                <Button render={<a href={buildInstagramAuthorizeUrl(crypto.randomUUID())} />}>
+                  Connect Instagram
+                </Button>
+              </>
+            )}
+          </div>
         </div>
       </div>
     </section>

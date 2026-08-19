@@ -43,7 +43,40 @@ NEXT_PUBLIC_WHATSAPP_NUMBER=919373136048
 
 Set the same variables in the Vercel project settings before deploying.
 
-### 3. Local dev
+### 3. Instagram feed setup (optional, one-time)
+
+The homepage's Instagram rail shows AB Realty's real, live posts — this
+requires a token that only Amar (the account owner) can generate. It's a
+15-minute setup, and only needs to be done once. Meta's own App Review is
+**not** required here since this only ever reads AB Realty's own account.
+
+1. Make sure `@ab_realty_in` is set to a **Professional (Business or
+   Creator) account** — Instagram app → Settings → Account type.
+2. Go to [developers.facebook.com/apps](https://developers.facebook.com/apps)
+   and create a new app (type: "Other" / "Business").
+3. In the app dashboard, add the **Instagram** product, then choose
+   **"API setup with Instagram login"** (also called Business Login for
+   Instagram). Add `@ab_realty_in` as the connected Instagram account when
+   prompted.
+4. Under the app's Instagram settings, add an OAuth redirect URI matching
+   `INSTAGRAM_REDIRECT_URI` — for production that's
+   `https://abrealty.in/api/instagram/callback`.
+5. From the app dashboard, copy the **Instagram app ID** and **app secret**
+   into `INSTAGRAM_APP_ID` / `INSTAGRAM_APP_SECRET` (in `.env.local` and in
+   Vercel's environment variables), along with `INSTAGRAM_REDIRECT_URI`.
+   Redeploy so Vercel picks them up.
+6. Sign into `/admin` on the deployed site and click **Connect Instagram**.
+   Approve access as `@ab_realty_in` when Instagram prompts you. You'll land
+   on a page showing `INSTAGRAM_ACCESS_TOKEN` and `INSTAGRAM_USER_ID` — copy
+   both into Vercel's environment variables and redeploy once more.
+
+The feed will then appear on the homepage automatically. Instagram's tokens
+expire after 60 days and don't renew themselves — every couple of months,
+click **Refresh Instagram Token** in `/admin`, copy the new value into
+Vercel, and redeploy. If the token lapses, the rail just quietly disappears
+from the homepage rather than showing broken images — nothing breaks.
+
+### 4. Local dev
 
 ```
 npm install
