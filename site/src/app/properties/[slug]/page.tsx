@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getPropertyBySlug, getRelatedProperties } from "@/lib/data";
+import { getAllProperties, getPropertyBySlug, getRelatedProperties } from "@/lib/data";
 import { PropertyGallery } from "@/components/properties/property-gallery";
 import { PropertyCard } from "@/components/properties/property-card";
 import { CtaLink } from "@/components/brand/cta-link";
@@ -9,7 +9,12 @@ import { StaggerReveal, StaggerItem } from "@/components/motion/stagger-reveal";
 import { JsonLd, breadcrumbJsonLd, propertyJsonLd } from "@/components/seo/json-ld";
 import { waLinks } from "@/lib/whatsapp";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
+
+export async function generateStaticParams() {
+  const properties = await getAllProperties();
+  return properties.map((property) => ({ slug: property.slug }));
+}
 
 export async function generateMetadata(
   props: PageProps<"/properties/[slug]">

@@ -1,4 +1,5 @@
 import { createClient } from "@/lib/supabase/server";
+import { createPublicClient } from "@/lib/supabase/public";
 import { slugify } from "@/lib/slug";
 import type { Property, Requirement } from "@/lib/types";
 
@@ -178,7 +179,7 @@ function mapRequirement(row: Record<string, unknown>, index: number): Requiremen
 }
 
 export async function getAllProperties(): Promise<Property[]> {
-  const supabase = await createClient();
+  const supabase = createPublicClient();
   const { data, error } = await supabase
     .from("properties")
     .select("*")
@@ -242,7 +243,7 @@ export async function getAllRequirementsForAdmin(): Promise<Requirement[]> {
 }
 
 export async function getActiveRequirements(): Promise<Requirement[]> {
-  const supabase = await createClient();
+  const supabase = createPublicClient();
   const { data, error } = await supabase
     .from("requirements")
     .select("*")

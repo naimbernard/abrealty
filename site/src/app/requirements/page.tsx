@@ -4,7 +4,7 @@ import { RequirementCard } from "@/components/requirements/requirement-card";
 import { FadeIn } from "@/components/motion/fade-in";
 import { StaggerReveal, StaggerItem } from "@/components/motion/stagger-reveal";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: "AB Realty Requirements Board",

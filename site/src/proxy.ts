@@ -1,5 +1,6 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
+import { fetchWithTimeout } from "@/lib/supabase/fetch-with-timeout";
 
 export async function proxy(request: NextRequest) {
   let response = NextResponse.next({ request });
@@ -8,6 +9,7 @@ export async function proxy(request: NextRequest) {
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
     {
+      global: { fetch: fetchWithTimeout },
       cookies: {
         getAll() {
           return request.cookies.getAll();
@@ -23,9 +25,10 @@ export async function proxy(request: NextRequest) {
     }
   );
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const user = await supabase.auth
+    .getUser()
+    .then(({ data }) => data.user)
+    .catch(() => null);
 
   const isLoginRoute = request.nextUrl.pathname === "/admin/login";
 

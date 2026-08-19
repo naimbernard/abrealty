@@ -12,7 +12,10 @@ import { Faq, FAQ_ITEMS } from "@/components/home/faq";
 import { FinalCta } from "@/components/home/final-cta";
 import { JsonLd, faqJsonLd } from "@/components/seo/json-ld";
 
-export const dynamic = "force-dynamic";
+// Statically cached and refreshed in the background at most once a minute,
+// so admin edits still show up quickly without every visitor paying for a
+// live Supabase round-trip.
+export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: "AB Realty | Luxury Villas & Investment Property in Goa",
