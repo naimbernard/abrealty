@@ -33,10 +33,10 @@ export function Hero() {
         <FadeIn delay={0.3}>
           <div className="mt-9 flex flex-wrap gap-4">
             <CtaLink href={waLinks.general()} external variant="gold">
-              Talk to Amar on WhatsApp ↗
+              Talk to Amar on WhatsApp ↗︎
             </CtaLink>
             <CtaLink href="/properties" variant="outline">
-              View Properties ↘
+              View Properties ↘︎
             </CtaLink>
           </div>
         </FadeIn>

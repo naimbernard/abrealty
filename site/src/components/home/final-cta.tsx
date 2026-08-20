@@ -19,7 +19,7 @@ export function FinalCta() {
           </p>
           <div className="mt-9 flex flex-wrap gap-4">
             <CtaLink href={waLinks.general()} external variant="gold">
-              Message on WhatsApp ↗
+              Message on WhatsApp ↗︎
             </CtaLink>
             <CtaLink href="tel:+919373136048" variant="outline">
               +91 93731 36048

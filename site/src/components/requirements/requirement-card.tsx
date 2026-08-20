@@ -42,7 +42,7 @@ export function RequirementCard({ requirement }: { requirement: Requirement }) {
           external
           variant="dark"
         >
-          I Have a Match ↗
+          I Have a Match ↗︎
         </CtaLink>
       </div>
     </article>

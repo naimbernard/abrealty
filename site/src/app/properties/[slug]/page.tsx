@@ -124,7 +124,7 @@ export default async function PropertyDetailPage(
               variant="gold"
               className="mt-6 w-full justify-center"
             >
-              Enquire on WhatsApp ↗
+              Enquire on WhatsApp ↗︎
             </CtaLink>
           </div>
         </FadeIn>

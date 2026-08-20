@@ -61,7 +61,7 @@ export function PropertyCard({ property }: { property: Property }) {
 
         <div className="mt-6 flex items-center gap-3">
           <CtaLink href={waLinks.property(property.title)} external variant="dark" className="text-xs">
-            Enquire Now ↗
+            Enquire Now ↗︎
           </CtaLink>
           <Link
             href={`/properties/${property.slug}`}

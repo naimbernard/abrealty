@@ -38,7 +38,7 @@ export function Header() {
           </Link>
         ))}
         <CtaLink href={waLinks.general()} external variant="gold">
-          Talk to Amar ↗
+          Talk to Amar ↗︎
         </CtaLink>
       </nav>
 
@@ -62,7 +62,7 @@ export function Header() {
               </Link>
             ))}
             <CtaLink href={waLinks.general()} external variant="gold" className="mt-4 justify-center">
-              Talk to Amar ↗
+              Talk to Amar ↗︎
             </CtaLink>
           </nav>
         </SheetContent>

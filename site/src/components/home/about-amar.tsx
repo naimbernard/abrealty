@@ -40,7 +40,7 @@ export function AboutAmar() {
         </p>
         <div className="mt-8">
           <CtaLink href="/about" variant="dark">
-            Read More ↘
+            Read More ↘︎
           </CtaLink>
         </div>
       </FadeIn>

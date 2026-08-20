@@ -20,7 +20,7 @@ export async function FeaturedProperties() {
         </FadeIn>
         <FadeIn delay={0.1}>
           <CtaLink href="/properties" variant="dark">
-            All Properties ↘
+            All Properties ↘︎
           </CtaLink>
         </FadeIn>
       </div>

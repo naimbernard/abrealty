@@ -116,7 +116,7 @@ export default function AboutPage() {
           </p>
           <div className="mt-9">
             <CtaLink href={waLinks.general()} external variant="gold">
-              Talk to Amar on WhatsApp ↗
+              Talk to Amar on WhatsApp ↗︎
             </CtaLink>
           </div>
         </FadeIn>

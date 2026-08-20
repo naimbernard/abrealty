@@ -35,7 +35,7 @@ export async function RequirementsTeaser() {
 
       <div className="mt-12 text-center">
         <CtaLink href="/requirements" variant="dark">
-          See All Live Requirements ↘
+          See All Live Requirements ↘︎
         </CtaLink>
       </div>
     </section>

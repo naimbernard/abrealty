@@ -7,10 +7,8 @@ export function Footer() {
     <footer className="bg-gold-soft px-6 pt-20 text-navy-deep sm:px-14">
       <div className="grid min-h-[260px] grid-cols-1 gap-10 pb-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
         <div>
-          <h2 className="font-heading text-3xl leading-tight font-light tracking-[0.08em]">
-            AB
-            <br />
-            REALTY
+          <h2 className="font-heading text-2xl leading-tight font-light tracking-[0.08em] whitespace-nowrap sm:text-3xl">
+            AB REALTY
           </h2>
           <div className="mt-8 flex flex-col gap-2 text-sm">
             <Link href="/properties" className="hover:text-navy">
@@ -51,7 +49,7 @@ export function Footer() {
         <div>
           <p className="mb-3 text-sm font-semibold tracking-wide">Inquiries</p>
           <CtaLink href={waLinks.general()} external variant="dark">
-            Speak to Amar ↗
+            Speak to Amar ↗︎
           </CtaLink>
         </div>
       </div>
