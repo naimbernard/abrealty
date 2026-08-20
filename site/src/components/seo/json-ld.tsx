@@ -21,7 +21,7 @@ export function realEstateAgentJsonLd() {
       name: "Amar Bernard",
     },
     telephone: "+91-9373136048",
-    email: "abrealty@gmail.com",
+    email: "abrealtygoa@gmail.com",
     url: SITE_URL,
     image: `${SITE_URL}/assets/logo-original.png`,
     address: {

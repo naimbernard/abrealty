@@ -66,7 +66,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <JsonLd data={realEstateAgentJsonLd()} />
         <SmoothScroll>
           <Header />
-          <main className="flex-1">{children}</main>
+          <main className="flex-1 pt-20">{children}</main>
           <Footer />
         </SmoothScroll>
         <FloatingWhatsapp />

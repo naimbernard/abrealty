@@ -34,7 +34,7 @@ export default async function RequirementsPage() {
         </FadeIn>
       </section>
 
-      <section className="px-6 py-20 sm:px-14 sm:py-28">
+      <section className="bg-[linear-gradient(to_bottom,var(--sand),var(--ivory)_140px)] px-6 py-20 sm:px-14 sm:py-28">
         {requirements.length === 0 ? (
           <p className="text-muted-foreground">
             No active requirements right now — check back soon.

@@ -5,7 +5,7 @@ import { waLinks } from "@/lib/whatsapp";
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-[calc(100svh-80px)] items-end overflow-hidden bg-navy-deep sm:items-center">
+    <section className="relative -mt-20 flex min-h-[100svh] items-end overflow-hidden bg-navy-deep sm:items-center">
       <Image
         src="/assets/landing-wide.png"
         alt="AB Realty — whitewashed coastal architecture overlooking the Goa shoreline"
@@ -15,6 +15,7 @@ export function Hero() {
         className="hero-kenburns object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/15 sm:bg-gradient-to-r sm:from-black/70 sm:via-black/35 sm:to-black/10" />
+      <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black/45 to-transparent" />
 
       <div className="relative z-10 max-w-3xl px-6 pb-16 sm:px-14 sm:pb-0">
         <FadeIn>

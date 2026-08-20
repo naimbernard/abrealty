@@ -4,7 +4,7 @@ import { CtaLink } from "@/components/brand/cta-link";
 
 export function AboutAmar() {
   return (
-    <section className="grid grid-cols-1 items-center gap-12 bg-white px-6 py-20 sm:px-14 sm:py-32 lg:grid-cols-2 lg:gap-20">
+    <section className="grid grid-cols-1 items-center gap-12 bg-[linear-gradient(to_bottom,var(--ivory),white_140px)] px-6 py-20 sm:px-14 sm:py-32 lg:grid-cols-2 lg:gap-20">
       <FadeIn className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-[0_24px_70px_rgba(12,10,4,0.18)]">
         <Image
           src="/assets/landing-vertical.png"

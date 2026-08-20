@@ -8,7 +8,7 @@ export async function FeaturedProperties() {
   const properties = await getFeaturedProperties(3);
 
   return (
-    <section className="px-6 py-20 sm:px-14 sm:py-32">
+    <section className="bg-[linear-gradient(to_bottom,var(--sand),var(--ivory)_140px)] px-6 py-20 sm:px-14 sm:py-32">
       <div className="mb-14 flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
         <FadeIn>
           <p className="mb-3 text-xs font-bold tracking-widest text-terracotta uppercase">

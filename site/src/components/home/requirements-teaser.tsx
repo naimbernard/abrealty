@@ -9,7 +9,7 @@ export async function RequirementsTeaser() {
   if (requirements.length === 0) return null;
 
   return (
-    <section className="px-6 py-20 sm:px-14 sm:py-32">
+    <section className="bg-[linear-gradient(to_bottom,var(--sand),var(--ivory)_140px)] px-6 py-20 sm:px-14 sm:py-32">
       <div className="mb-14 text-center">
         <FadeIn>
           <p className="mb-3 text-xs font-bold tracking-widest text-terracotta uppercase">

@@ -34,7 +34,7 @@ export default async function PropertiesPage() {
         </FadeIn>
       </section>
 
-      <section className="px-6 py-20 sm:px-14 sm:py-28">
+      <section className="bg-[linear-gradient(to_bottom,var(--sand),var(--ivory)_140px)] px-6 py-20 sm:px-14 sm:py-28">
         <StaggerReveal className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {properties.map((property) => (
             <StaggerItem key={property.id}>

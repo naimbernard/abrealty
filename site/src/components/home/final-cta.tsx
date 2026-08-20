@@ -26,8 +26,8 @@ export function FinalCta() {
             </CtaLink>
           </div>
           <div className="mt-8 flex flex-wrap gap-6 text-sm text-ivory/70">
-            <a href="mailto:abrealty@gmail.com" className="hover:text-ivory">
-              abrealty@gmail.com
+            <a href="mailto:abrealtygoa@gmail.com" className="hover:text-ivory">
+              abrealtygoa@gmail.com
             </a>
             <a
               href="https://www.instagram.com/ab_realty_in"

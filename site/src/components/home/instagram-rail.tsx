@@ -6,7 +6,7 @@ export async function InstagramRail() {
   if (posts.length === 0) return null;
 
   return (
-    <section className="bg-sand py-16 sm:py-20">
+    <section className="bg-[linear-gradient(to_bottom,white,var(--sand)_140px)] py-16 sm:py-20">
       <FadeIn className="mb-8 text-center">
         <p className="text-lg">
           Follow us on Instagram{"  "}

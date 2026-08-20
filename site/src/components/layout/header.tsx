@@ -1,6 +1,8 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
 import {
   Sheet,
@@ -10,6 +12,7 @@ import {
 } from "@/components/ui/sheet";
 import { CtaLink } from "@/components/brand/cta-link";
 import { waLinks } from "@/lib/whatsapp";
+import { cn } from "@/lib/utils";
 
 const navLinks = [
   { href: "/properties", label: "Properties" },
@@ -18,8 +21,29 @@ const navLinks = [
 ];
 
 export function Header() {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    if (!isHome) return;
+    const onScroll = () => setScrolled(window.scrollY > 60);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [isHome]);
+
+  const transparent = isHome && !scrolled;
+
   return (
-    <header className="sticky top-0 z-50 flex h-20 items-center justify-between border-b-4 border-sand bg-navy-deep px-6 text-ivory sm:px-10">
+    <header
+      className={cn(
+        "fixed inset-x-0 top-0 z-50 flex h-20 items-center justify-between px-6 text-ivory transition-[background-color] duration-500 sm:px-10",
+        transparent
+          ? "bg-gradient-to-b from-black/55 via-black/20 to-transparent"
+          : "bg-navy-deep"
+      )}
+    >
       <Link
         href="/"
         className="font-heading text-xl font-medium tracking-[0.12em] sm:text-2xl"

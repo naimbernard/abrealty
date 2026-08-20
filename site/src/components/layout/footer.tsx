@@ -28,8 +28,8 @@ export function Footer() {
           <a href="tel:+919373136048" className="block hover:text-navy">
             +91 93731 36048
           </a>
-          <a href="mailto:abrealty@gmail.com" className="mt-1 block hover:text-navy">
-            abrealty@gmail.com
+          <a href="mailto:abrealtygoa@gmail.com" className="mt-1 block hover:text-navy">
+            abrealtygoa@gmail.com
           </a>
           <p className="mt-1">Based in Goa, India</p>
         </div>

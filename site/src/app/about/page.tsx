@@ -30,7 +30,7 @@ export default function AboutPage() {
         </FadeIn>
       </section>
 
-      <section className="grid grid-cols-1 items-center gap-12 px-6 py-20 sm:px-14 sm:py-28 lg:grid-cols-2 lg:gap-20">
+      <section className="grid grid-cols-1 items-center gap-12 bg-[linear-gradient(to_bottom,var(--sand),var(--ivory)_140px)] px-6 py-20 sm:px-14 sm:py-28 lg:grid-cols-2 lg:gap-20">
         <FadeIn>
           <blockquote className="border-l-2 border-gold pl-5 font-heading text-3xl leading-snug text-navy-deep italic sm:text-4xl">
             &ldquo;Every property tells a story — I make sure it&rsquo;s a

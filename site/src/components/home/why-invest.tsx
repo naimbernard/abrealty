@@ -22,7 +22,7 @@ const reasons = [
 
 export function WhyInvest() {
   return (
-    <section className="bg-sand px-6 py-20 sm:px-14 sm:py-32">
+    <section className="bg-[linear-gradient(to_bottom,var(--ivory),var(--sand)_140px)] px-6 py-20 sm:px-14 sm:py-32">
       <div className="mx-auto max-w-3xl text-center">
         <FadeIn>
           <p className="mb-3 text-xs font-bold tracking-widest text-terracotta uppercase">
