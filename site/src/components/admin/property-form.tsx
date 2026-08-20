@@ -55,8 +55,10 @@ export function PropertyForm() {
         <select id="property_type" name="property_type" className={selectClass} defaultValue="Villa">
           <option>Villa</option>
           <option>Apartment</option>
+          <option>Penthouse</option>
           <option>Plot</option>
           <option>Land</option>
+          <option>Commercial</option>
         </select>
       </div>
 
@@ -66,6 +68,8 @@ export function PropertyForm() {
           <option>Available</option>
           <option>Under Offer</option>
           <option>Sold</option>
+          <option>For Rent</option>
+          <option>For Lease</option>
         </select>
       </div>
       <div className="flex flex-col gap-1.5">

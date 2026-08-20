@@ -1,5 +1,11 @@
-export type PropertyType = "Villa" | "Apartment" | "Plot" | "Land";
-export type PropertyStatus = "Available" | "Under Offer" | "Sold";
+export type PropertyType =
+  | "Villa"
+  | "Apartment"
+  | "Plot"
+  | "Land"
+  | "Commercial"
+  | "Penthouse";
+export type PropertyStatus = "Available" | "Under Offer" | "Sold" | "For Rent" | "For Lease";
 
 export type Property = {
   id: string;
