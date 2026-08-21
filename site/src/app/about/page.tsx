@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { CtaLink } from "@/components/brand/cta-link";
 import { FadeIn } from "@/components/motion/fade-in";
+import { LatticeGlow } from "@/components/motifs/lattice-glow";
 import { waLinks } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
@@ -31,7 +32,8 @@ export default function AboutPage() {
       </section>
 
       <section className="grid grid-cols-1 items-center gap-12 bg-[linear-gradient(to_bottom,var(--sand),var(--ivory)_140px)] px-6 py-20 sm:px-14 sm:py-28 lg:grid-cols-2 lg:gap-20">
-        <FadeIn>
+        <FadeIn className="relative isolate">
+          <LatticeGlow tone="light" className="pointer-events-none absolute -inset-x-10 -inset-y-16 -z-10" />
           <blockquote className="border-l-2 border-gold pl-5 font-heading text-3xl leading-snug text-navy-deep italic sm:text-4xl">
             &ldquo;Every property tells a story — I make sure it&rsquo;s a
             profitable one.&rdquo;

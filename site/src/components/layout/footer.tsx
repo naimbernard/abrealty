@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { CtaLink } from "@/components/brand/cta-link";
+import { RooflineDivider } from "@/components/motifs/roofline-divider";
 import { waLinks } from "@/lib/whatsapp";
 
 export function Footer() {
   return (
-    <footer className="bg-gold-soft px-6 pt-20 text-navy-deep sm:px-14">
-      <div className="grid min-h-[260px] grid-cols-1 gap-10 pb-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
+    <footer className="bg-gold-soft px-6 text-navy-deep sm:px-14">
+      <RooflineDivider className="-mx-6 h-3.5 sm:-mx-14" />
+      <div className="grid min-h-[260px] grid-cols-1 gap-10 pt-16 pb-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
         <div>
           <h2 className="font-heading text-2xl leading-tight font-light tracking-[0.08em] whitespace-nowrap sm:text-3xl">
             AB REALTY

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { CtaLink } from "@/components/brand/cta-link";
 import { FadeIn } from "@/components/motion/fade-in";
+import { LatticeGlow } from "@/components/motifs/lattice-glow";
 import { waLinks } from "@/lib/whatsapp";
 
 export function Hero() {
@@ -18,7 +19,8 @@ export function Hero() {
       <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black/45 to-transparent" />
 
       <div className="relative z-10 max-w-3xl px-6 pb-16 sm:px-14 sm:pb-0">
-        <FadeIn>
+        <FadeIn className="relative isolate">
+          <LatticeGlow className="pointer-events-none absolute -inset-x-20 -inset-y-24 -z-10 sm:-inset-y-32" />
           <h1 className="font-heading text-[44px] leading-[1.05] font-bold tracking-tight text-ivory sm:text-[76px] lg:text-[96px]">
             Building Trust,
             <br />
