@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         hostname: "njxnuucpesumambapxsd.supabase.co",
         pathname: "/storage/v1/object/public/**",
       },
+      {
+        protocol: "https",
+        hostname: "static.wixstatic.com",
+        pathname: "/media/**",
+      },
     ],
   },
 };

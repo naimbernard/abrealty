@@ -24,11 +24,11 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://abrealty.in";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "AB Realty | Luxury Villas & Investment Property in Goa",
+    default: "AB Realty | Goa Property for Sale — Villas & NRI Investment",
     template: "%s | AB Realty",
   },
   description:
-    "AB Realty is Goa's trusted boutique real estate advisory for luxury villas, apartments, plots and investment property — serving buyers and NRIs across India, the UAE and the UK.",
+    "AB Realty is Goa's trusted real estate advisory for villas, apartments, plots and land — helping NRI buyers in India, the UK and Dubai invest with honest, personal guidance.",
   alternates: {
     canonical: "/",
     languages: {
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "AB Realty | Luxury Villas & Investment Property in Goa",
+    title: "AB Realty | Goa Property for Sale — Villas & NRI Investment",
     description:
-      "Boutique real estate advisory for villas, apartments, land and investment opportunities across Goa.",
+      "Villas, apartments, plots and land in Goa — trusted guidance for NRI buyers in India, the UK and Dubai.",
     url: SITE_URL,
     siteName: "AB Realty",
     images: ["/assets/landing-wide.png"],
@@ -50,9 +50,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AB Realty | Luxury Villas & Investment Property in Goa",
+    title: "AB Realty | Goa Property for Sale — Villas & NRI Investment",
     description:
-      "Boutique real estate advisory for villas, apartments, land and investment opportunities across Goa.",
+      "Villas, apartments, plots and land in Goa — trusted guidance for NRI buyers in India, the UK and Dubai.",
     images: ["/assets/landing-wide.png"],
   },
 };
@@ -64,8 +64,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${fraunces.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-ivory text-ink">
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-GMBD398YXT" strategy="afterInteractive" />
-        <Script id="gtag-init" strategy="afterInteractive">
+        {/* lazyOnload: analytics has no business competing with hydration
+            for main-thread time on first load */}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-GMBD398YXT" strategy="lazyOnload" />
+        <Script id="gtag-init" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

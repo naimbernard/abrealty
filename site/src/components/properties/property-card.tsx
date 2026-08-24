@@ -5,11 +5,11 @@ import { GrilleHover } from "@/components/motifs/grille-hover";
 import { TileMotif } from "@/components/motifs/tile-motif";
 import { LatticeReveal } from "@/components/motifs/lattice-reveal";
 import { waLinks } from "@/lib/whatsapp";
+import { isOptimizableImage } from "@/lib/utils";
 import type { Property } from "@/lib/types";
 
 export function PropertyCard({ property }: { property: Property }) {
   const image = property.media_url || property.image_url || "/assets/landing-wide.png";
-  const isLocal = image.startsWith("/");
 
   return (
     <article className="group relative overflow-hidden rounded-2xl border border-black/10 bg-white shadow-[0_10px_28px_rgba(0,0,0,0.06)] transition-all duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:-translate-y-2 hover:shadow-[0_24px_70px_rgba(12,10,4,0.18)]">
@@ -21,7 +21,7 @@ export function PropertyCard({ property }: { property: Property }) {
             alt={property.title}
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            unoptimized={!isLocal}
+            unoptimized={!isOptimizableImage(image)}
             className="object-cover transition-transform duration-[1200ms] ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />

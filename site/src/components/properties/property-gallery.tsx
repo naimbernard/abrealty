@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { isOptimizableImage } from "@/lib/utils";
 import {
   Carousel,
   CarouselContent,
@@ -29,7 +30,7 @@ export function PropertyGallery({
                 alt={`${title} — photo ${index + 1}`}
                 fill
                 sizes="(max-width: 1024px) 100vw, 60vw"
-                unoptimized={!src.startsWith("/")}
+                unoptimized={!isOptimizableImage(src)}
                 priority={index === 0}
                 className="object-cover"
               />
