@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { GrilleHover } from "@/components/motifs/grille-hover";
 import type { ReactNode } from "react";
 
 const variants = {
@@ -23,14 +24,18 @@ export function CtaLink({
   external?: boolean;
 }) {
   const classes = cn(
-    "inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold tracking-wide transition-all duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:-translate-y-0.5 hover:shadow-[0_18px_36px_rgba(0,0,0,0.18)]",
+    "group relative inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold tracking-wide transition-all duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] hover:-translate-y-0.5 hover:shadow-[0_18px_36px_rgba(0,0,0,0.18)]",
     variants[variant],
     className
   );
 
+  // gold-on-gold stroke would be invisible; every other variant gets the grille draw-in
+  const grille = variant !== "gold" ? <GrilleHover variant="pill" /> : null;
+
   if (external) {
     return (
       <a href={href} target="_blank" rel="noopener noreferrer" className={classes}>
+        {grille}
         {children}
       </a>
     );
@@ -38,6 +43,7 @@ export function CtaLink({
 
   return (
     <Link href={href} className={classes}>
+      {grille}
       {children}
     </Link>
   );

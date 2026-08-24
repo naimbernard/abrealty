@@ -3,6 +3,7 @@ import Image from "next/image";
 import { CtaLink } from "@/components/brand/cta-link";
 import { FadeIn } from "@/components/motion/fade-in";
 import { LatticeGlow } from "@/components/motifs/lattice-glow";
+import { CashewCurve } from "@/components/motifs/cashew-curve";
 import { waLinks } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
@@ -57,16 +58,24 @@ export default function AboutPage() {
             serious buyers looking for luxury villas, apartments, land and
             high-value investment opportunities.
           </p>
+          <p className="mt-4 text-sm text-muted-foreground/80 italic">
+            Goa runs on seasons, not just markets — from monsoon-green paddy
+            fields to the cashew harvest that fills village courtyards every
+            summer. Amar buys and sells with that rhythm in mind.
+          </p>
         </FadeIn>
 
-        <FadeIn delay={0.1} className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-[0_24px_70px_rgba(12,10,4,0.18)]">
-          <Image
-            src="/assets/landing-wide.png"
-            alt="AB Realty branding at a whitewashed Goa coastal residence"
-            fill
-            sizes="(max-width: 1024px) 100vw, 50vw"
-            className="object-cover"
-          />
+        <FadeIn delay={0.1} className="relative isolate">
+          <CashewCurve className="pointer-events-none absolute -top-16 -right-16 -z-10 h-[calc(100%+128px)] w-auto" />
+          <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-[0_24px_70px_rgba(12,10,4,0.18)]">
+            <Image
+              src="/assets/landing-wide.png"
+              alt="AB Realty branding at a whitewashed Goa coastal residence"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </div>
         </FadeIn>
       </section>
 

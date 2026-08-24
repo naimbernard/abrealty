@@ -5,7 +5,8 @@ import { waLinks } from "@/lib/whatsapp";
 export function FinalCta() {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2">
-      <div className="flex flex-col justify-center bg-navy-deep px-6 py-20 text-ivory sm:px-14 sm:py-28">
+      {/* laterite facade seam: a crisp painted-edge boundary, not a soft fade */}
+      <div className="relative flex flex-col justify-center border-gold bg-navy-deep px-6 py-20 text-ivory sm:px-14 sm:py-28 lg:border-r-4">
         <FadeIn>
           <p className="mb-3 text-xs font-bold tracking-widest text-gold uppercase">
             Start the Conversation
@@ -41,11 +42,11 @@ export function FinalCta() {
         </FadeIn>
       </div>
 
-      <div className="min-h-[360px]">
+      <div className="min-h-[360px] bg-sand">
         <iframe
           title="AB Realty — Goa"
           src="https://www.google.com/maps?q=Goa,India&output=embed"
-          className="h-full min-h-[360px] w-full border-0"
+          className="h-full min-h-[360px] w-full border-0 grayscale-[15%]"
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         />

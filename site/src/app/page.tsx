@@ -7,7 +7,6 @@ import { WhyInvest } from "@/components/home/why-invest";
 import { RequirementsTeaser } from "@/components/home/requirements-teaser";
 import { AboutAmar } from "@/components/home/about-amar";
 import { ProcessTimeline } from "@/components/home/process-timeline";
-import { Locations } from "@/components/home/locations";
 import { Faq, FAQ_ITEMS } from "@/components/home/faq";
 import { FinalCta } from "@/components/home/final-cta";
 import { JsonLd, faqJsonLd } from "@/components/seo/json-ld";
@@ -39,7 +38,6 @@ export default function HomePage() {
       <RequirementsTeaser />
       <AboutAmar />
       <ProcessTimeline />
-      <Locations />
       <Faq />
       <FinalCta />
     </>

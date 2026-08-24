@@ -23,6 +23,7 @@ const reasons = [
 export function WhyInvest() {
   return (
     <section className="bg-[linear-gradient(to_bottom,var(--ivory),var(--sand)_140px)] px-6 py-20 sm:px-14 sm:py-32">
+      {/* horizon line: the sea/sky axis, above it the thesis, below it what stands on the ground */}
       <div className="mx-auto max-w-3xl text-center">
         <FadeIn>
           <p className="mb-3 text-xs font-bold tracking-widest text-terracotta uppercase">
@@ -39,6 +40,10 @@ export function WhyInvest() {
           </p>
         </FadeIn>
       </div>
+
+      <FadeIn delay={0.1} className="relative mx-auto mt-16 h-px max-w-5xl bg-gradient-to-r from-transparent via-terracotta/50 to-transparent">
+        <span className="absolute top-1/2 left-1/2 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-terracotta" />
+      </FadeIn>
 
       <StaggerReveal className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2">
         {reasons.map((reason) => (
