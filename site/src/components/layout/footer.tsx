@@ -46,6 +46,14 @@ export function Footer() {
           >
             Instagram
           </a>
+          <a
+            href="https://www.reddit.com/user/AB-Realty/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-1 block hover:text-navy"
+          >
+            Reddit
+          </a>
         </div>
 
         <div>
