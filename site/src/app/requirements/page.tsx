@@ -29,7 +29,7 @@ export default async function RequirementsPage() {
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
             Explore active buyer and investor requirements from AB Realty&apos;s
             client network. If you own or represent a property that matches
-            one of these, contact Amar directly — this board changes daily.
+            one of these, contact Amar directly - this board changes daily.
           </p>
         </FadeIn>
       </section>
@@ -37,7 +37,7 @@ export default async function RequirementsPage() {
       <section className="bg-[linear-gradient(to_bottom,var(--sand),var(--ivory)_140px)] px-6 py-20 sm:px-14 sm:py-28">
         {requirements.length === 0 ? (
           <p className="text-muted-foreground">
-            No active requirements right now — check back soon.
+            No active requirements right now - check back soon.
           </p>
         ) : (
           <StaggerReveal className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

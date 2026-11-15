@@ -1,6 +1,6 @@
 /**
- * A custom geometric tile unit in the spirit of azulejo — hand-painted
- * Portuguese ceramic tilework — built from the existing brand palette
+ * A custom geometric tile unit in the spirit of azulejo - hand-painted
+ * Portuguese ceramic tilework - built from the existing brand palette
  * (navy/terracotta/ivory), not literal blue-and-white. A genuine repeating
  * structural motif, not a stock background pattern: used as the property
  * card badge treatment and as the Requirements Board's divider band.

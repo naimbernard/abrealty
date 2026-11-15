@@ -25,12 +25,12 @@ export const FAQ_ITEMS = [
   {
     question: "How does AB Realty vet its listings?",
     answer:
-      "Every property is checked for location strength, design quality, title clarity and resale potential before it's featured — AB Realty does not list every property that comes its way.",
+      "Every property is checked for location strength, design quality, title clarity and resale potential before it's featured - AB Realty does not list every property that comes its way.",
   },
   {
     question: "Does AB Realty help with renovations or rentals after purchase?",
     answer:
-      "Yes — beyond the transaction, AB Realty supports clients with contractor coordination, renovation guidance and rental management referrals for owners who want to generate income from their Goa property.",
+      "Yes - beyond the transaction, AB Realty supports clients with contractor coordination, renovation guidance and rental management referrals for owners who want to generate income from their Goa property.",
   },
 ];
 

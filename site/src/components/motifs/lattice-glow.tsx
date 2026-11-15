@@ -1,6 +1,6 @@
 /**
  * A soft, warm, diffused glow referencing Goan oyster-shell (Xavier)
- * window panes — light filtered through a wooden lattice rather than a
+ * window panes - light filtered through a wooden lattice rather than a
  * flat gradient blur. Uses only existing brand tokens (gold/terracotta).
  * Decorative only; kept out of the a11y tree.
  *

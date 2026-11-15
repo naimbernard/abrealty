@@ -1,7 +1,7 @@
 /**
- * An abstracted reading of the balcão — the covered porch/entrance of a
+ * An abstracted reading of the balcão - the covered porch/entrance of a
  * Goan-Portuguese house: flanking columns, a shaded threshold, built-in
- * stone seating. Not a literal porch cutout — thin architectural verticals
+ * stone seating. Not a literal porch cutout - thin architectural verticals
  * marking an entrance, and a ledge line where the seating would run.
  * Decorative only; kept out of the a11y tree.
  */

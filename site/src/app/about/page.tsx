@@ -26,7 +26,7 @@ export default function AboutPage() {
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
             A boutique Goa real estate consultancy built on trust, transparency
-            and personalised guidance — for buyers, sellers, renters and
+            and personalised guidance - for buyers, sellers, renters and
             investors alike.
           </p>
         </FadeIn>
@@ -36,11 +36,11 @@ export default function AboutPage() {
         <FadeIn className="relative isolate">
           <LatticeGlow tone="light" className="pointer-events-none absolute -inset-x-10 -inset-y-16 -z-10" />
           <blockquote className="border-l-2 border-gold pl-5 font-heading text-3xl leading-snug text-navy-deep italic sm:text-4xl">
-            &ldquo;Every property tells a story — I make sure it&rsquo;s a
+            &ldquo;Every property tells a story - I make sure it&rsquo;s a
             profitable one.&rdquo;
           </blockquote>
           <p className="mt-8 text-lg leading-relaxed text-muted-foreground">
-            At the heart of AB Realty is founder Amar Bernard — driven by a
+            At the heart of AB Realty is founder Amar Bernard - driven by a
             genuine passion for helping people find a place they can call
             home, and a belief that real estate is fundamentally about trust,
             relationships and lasting opportunity.
@@ -48,18 +48,18 @@ export default function AboutPage() {
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
             He built AB Realty on honesty, dedication and care, with a mission
             to make buying, selling or investing in Goa property transparent,
-            supportive and rewarding — treating every client, regardless of
+            supportive and rewarding - treating every client, regardless of
             the size of their goals, with the same respect and attention.
           </p>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
             With roots in London and years of family experience in Goa&rsquo;s
             property market, Amar brings a rare mix of international
-            perspective and local insight — working with HNIs, NRIs and
+            perspective and local insight - working with HNIs, NRIs and
             serious buyers looking for luxury villas, apartments, land and
             high-value investment opportunities.
           </p>
           <p className="mt-4 text-sm text-muted-foreground/80 italic">
-            Goa runs on seasons, not just markets — from monsoon-green paddy
+            Goa runs on seasons, not just markets - from monsoon-green paddy
             fields to the cashew harvest that fills village courtyards every
             summer. Amar buys and sells with that rhythm in mind.
           </p>
@@ -88,13 +88,13 @@ export default function AboutPage() {
             <p className="mt-6 text-lg leading-relaxed text-ivory/80">
               Goa is one of the most special places in the world, and real
               estate here has to be handled with respect. It is not just
-              about buying land, selling homes or building value — it is
+              about buying land, selling homes or building value - it is
               about understanding the balance between people, property,
               nature and the future of the place we call home.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-ivory/80">
               I do not believe in pushing every listing. I believe in showing
-              properties that make sense — homes, land, rentals and
+              properties that make sense - homes, land, rentals and
               investment opportunities approached with honesty, care and
               practical guidance.
             </p>

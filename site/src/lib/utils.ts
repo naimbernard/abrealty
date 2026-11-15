@@ -5,7 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-// Hosts allowed in next.config.ts `images.remotePatterns` — anything else
+// Hosts allowed in next.config.ts `images.remotePatterns` - anything else
 // (a stray admin-pasted URL from an unlisted host) falls back to
 // `unoptimized` so the image still renders instead of erroring.
 const OPTIMIZABLE_HOSTS = ["njxnuucpesumambapxsd.supabase.co", "static.wixstatic.com"]

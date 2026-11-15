@@ -24,11 +24,11 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://abrealty.in";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "AB Realty | Goa Property for Sale — Villas & NRI Investment",
+    default: "AB Realty | Goa Property for Sale - Villas & NRI Investment",
     template: "%s | AB Realty",
   },
   description:
-    "AB Realty is Goa's trusted real estate advisory for villas, apartments, plots and land — helping NRI buyers in India, the UK and Dubai invest with honest, personal guidance.",
+    "AB Realty is Goa's trusted real estate advisory for villas, apartments, plots and land - helping NRI buyers in India, the UK and Dubai invest with honest, personal guidance.",
   alternates: {
     canonical: "/",
     languages: {
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "AB Realty | Goa Property for Sale — Villas & NRI Investment",
+    title: "AB Realty | Goa Property for Sale - Villas & NRI Investment",
     description:
-      "Villas, apartments, plots and land in Goa — trusted guidance for NRI buyers in India, the UK and Dubai.",
+      "Villas, apartments, plots and land in Goa - trusted guidance for NRI buyers in India, the UK and Dubai.",
     url: SITE_URL,
     siteName: "AB Realty",
     images: ["/assets/landing-wide.png"],
@@ -50,9 +50,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AB Realty | Goa Property for Sale — Villas & NRI Investment",
+    title: "AB Realty | Goa Property for Sale - Villas & NRI Investment",
     description:
-      "Villas, apartments, plots and land in Goa — trusted guidance for NRI buyers in India, the UK and Dubai.",
+      "Villas, apartments, plots and land in Goa - trusted guidance for NRI buyers in India, the UK and Dubai.",
     images: ["/assets/landing-wide.png"],
   },
 };

@@ -8,7 +8,7 @@ const reasons = [
   },
   {
     title: "Tourism-Driven Rental Yield",
-    body: "Goa's year-round tourism economy supports strong short and long-term rental yields — making a Goa property investment as much a lifestyle asset as a financial one.",
+    body: "Goa's year-round tourism economy supports strong short and long-term rental yields - making a Goa property investment as much a lifestyle asset as a financial one.",
   },
   {
     title: "Transparent, Guided Dealings",
@@ -16,7 +16,7 @@ const reasons = [
   },
   {
     title: "A Lifestyle Draw",
-    body: "From whitewashed Portuguese architecture to paddy fields and coastline, Goa offers a quality of life that keeps owners — and renters — coming back.",
+    body: "From whitewashed Portuguese architecture to paddy fields and coastline, Goa offers a quality of life that keeps owners - and renters - coming back.",
   },
 ];
 
@@ -34,9 +34,9 @@ export function WhyInvest() {
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
             Whether you&apos;re based in Mumbai, Dubai or London, AB Realty helps
-            Indian and NRI investors navigate North Goa property investment —
+            Indian and NRI investors navigate North Goa property investment -
             from luxury villas for sale in Goa to land and long-term rental
-            assets — with clear guidance at every step.
+            assets - with clear guidance at every step.
           </p>
         </FadeIn>
       </div>

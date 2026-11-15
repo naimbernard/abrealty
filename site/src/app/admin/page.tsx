@@ -57,7 +57,7 @@ export default async function AdminPage() {
             {isInstagramConnected() ? (
               <>
                 <p className="mb-4 text-sm text-muted-foreground">
-                  Connected — the homepage pulls your latest posts automatically.
+                  Connected - the homepage pulls your latest posts automatically.
                   Instagram tokens expire after 60 days, so refresh this every
                   couple of months.
                 </p>
@@ -67,7 +67,7 @@ export default async function AdminPage() {
               <>
                 <p className="mb-4 text-sm text-muted-foreground">
                   Not connected yet. Requires a one-time setup in the Meta
-                  Developer console first — see{" "}
+                  Developer console first - see{" "}
                   <code className="rounded bg-sand px-1.5 py-0.5">README.md</code>{" "}
                   for the steps. Once the app is configured, connect here:
                 </p>

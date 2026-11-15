@@ -32,7 +32,7 @@ export function InstagramRefreshButton() {
       {token && (
         <div className="rounded-lg border border-black/10 bg-sand/40 p-3 text-xs break-all">
           <p className="mb-1 font-semibold">
-            New INSTAGRAM_ACCESS_TOKEN — copy this into Vercel and redeploy:
+            New INSTAGRAM_ACCESS_TOKEN - copy this into Vercel and redeploy:
           </p>
           <code>{token}</code>
         </div>

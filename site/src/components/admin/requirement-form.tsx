@@ -29,7 +29,7 @@ export function RequirementForm() {
     >
       <div className="sm:col-span-2">
         <p className="mb-1 text-sm font-semibold">Post a requirement</p>
-        <p className="text-xs text-muted-foreground">Takes under a minute — this goes live immediately.</p>
+        <p className="text-xs text-muted-foreground">Takes under a minute - this goes live immediately.</p>
       </div>
 
       <div className="flex flex-col gap-1.5 sm:col-span-2">
@@ -48,7 +48,7 @@ export function RequirementForm() {
 
       <div className="flex flex-col gap-1.5">
         <Label htmlFor="budget_range">Budget range</Label>
-        <Input id="budget_range" name="budget_range" placeholder="₹2.5Cr – ₹3.2Cr" />
+        <Input id="budget_range" name="budget_range" placeholder="₹2.5Cr - ₹3.2Cr" />
       </div>
       <div className="flex flex-col gap-1.5">
         <Label htmlFor="urgency">Timeline / urgency</Label>

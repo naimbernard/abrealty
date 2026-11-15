@@ -16,7 +16,7 @@ export function FinalCta() {
           </h2>
           <p className="mt-6 max-w-md text-lg leading-relaxed text-ivory/80">
             Share what you&apos;re looking for and Amar will personally get
-            back to you — usually within the hour.
+            back to you - usually within the hour.
           </p>
           <div className="mt-9 flex flex-wrap gap-4">
             <CtaLink href={waLinks.general()} external variant="gold">
@@ -44,7 +44,7 @@ export function FinalCta() {
 
       <div className="min-h-[360px] bg-sand">
         <iframe
-          title="AB Realty — Goa"
+          title="AB Realty - Goa"
           src="https://www.google.com/maps?q=Goa,India&output=embed"
           className="h-full min-h-[360px] w-full border-0 grayscale-[15%]"
           loading="lazy"

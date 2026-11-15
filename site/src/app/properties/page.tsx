@@ -9,7 +9,7 @@ export const revalidate = 60;
 export const metadata: Metadata = {
   title: "Properties for Sale in Goa",
   description:
-    "Browse AB Realty's curated villas, apartments, plots and land for sale across North Goa — vetted for location, design and resale potential.",
+    "Browse AB Realty's curated villas, apartments, plots and land for sale across North Goa - vetted for location, design and resale potential.",
   alternates: { canonical: "/properties" },
 };
 

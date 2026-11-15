@@ -1,6 +1,6 @@
 /**
  * The site's one cashew-apple reference: an abstracted hanging-fruit curve,
- * not a literal fruit illustration. Secondary signature — appears exactly
+ * not a literal fruit illustration. Secondary signature - appears exactly
  * once, as a quiet background form behind the About page founder photo.
  */
 export function CashewCurve({ className }: { className?: string }) {

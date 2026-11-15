@@ -1,4 +1,4 @@
-# AB Realty Vercel Site — Supabase Ready
+# AB Realty Vercel Site - Supabase Ready
 
 ## Deploy settings on Vercel
 

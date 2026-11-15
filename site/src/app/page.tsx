@@ -17,9 +17,9 @@ import { JsonLd, faqJsonLd } from "@/components/seo/json-ld";
 export const revalidate = 60;
 
 export const metadata: Metadata = {
-  title: "AB Realty | Goa Property for Sale — Villas & NRI Investment",
+  title: "AB Realty | Goa Property for Sale - Villas & NRI Investment",
   description:
-    "Goa's trusted real estate advisory for villas, apartments, plots and land — helping NRI buyers in India, the UK and Dubai invest with honest, personal guidance.",
+    "Goa's trusted real estate advisory for villas, apartments, plots and land - helping NRI buyers in India, the UK and Dubai invest with honest, personal guidance.",
   alternates: {
     canonical: "/",
     languages: { "en-IN": "/", "en-AE": "/", "en-GB": "/", "x-default": "/" },

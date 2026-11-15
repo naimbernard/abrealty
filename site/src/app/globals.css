@@ -57,7 +57,7 @@
 }
 
 :root {
-  /* AB Realty brand palette — warm coastal neutrals, ocean-navy, brass/gold accent */
+  /* AB Realty brand palette - warm coastal neutrals, ocean-navy, brass/gold accent */
   --sand: oklch(0.93 0.025 85);
   --ivory: oklch(0.98 0.012 90);
   --terracotta: oklch(0.6 0.15 38);

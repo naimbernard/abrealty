@@ -13,7 +13,7 @@ export function Hero() {
       <div className="relative flex flex-1 items-end sm:items-center">
         <Image
           src="/assets/landing-wide.png"
-          alt="AB Realty — whitewashed coastal architecture overlooking the Goa shoreline"
+          alt="AB Realty - whitewashed coastal architecture overlooking the Goa shoreline"
           fill
           priority
           sizes="100vw"
@@ -43,7 +43,7 @@ export function Hero() {
           <LatticeReveal className="relative isolate mx-auto w-fit">
             <LatticeGlow className="pointer-events-none absolute -inset-x-20 -inset-y-24 -z-10 sm:-inset-y-32" />
             <h1>
-              <span className="sr-only">AB Realty — Building Trust, Selling Dreams.</span>
+              <span className="sr-only">AB Realty - Building Trust, Selling Dreams.</span>
               <Image
                 src="/assets/ab-realty-logo.png"
                 alt=""
@@ -57,7 +57,7 @@ export function Hero() {
           </LatticeReveal>
           <FadeIn delay={0.15}>
             <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-ivory/90 sm:text-2xl">
-              Goa&apos;s trusted partner for villas, plots and investment property —
+              Goa&apos;s trusted partner for villas, plots and investment property -
               for buyers, investors and NRIs building a future on the coast.
             </p>
           </FadeIn>

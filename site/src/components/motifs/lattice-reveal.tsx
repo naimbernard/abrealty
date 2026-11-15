@@ -7,8 +7,8 @@ const EASE = [0.19, 1, 0.22, 1] as const;
 
 /**
  * The site's one signature scroll-reveal: content resolves from behind a
- * soft, warm, lattice-textured veil — like light easing through an
- * oyster-shell (Xavier) window — instead of a generic fade-up. Reserved
+ * soft, warm, lattice-textured veil - like light easing through an
+ * oyster-shell (Xavier) window - instead of a generic fade-up. Reserved
  * for the handful of moments that should feel special (see design plan);
  * everywhere else keeps the lighter FadeIn/StaggerReveal. GPU-cheap: only
  * opacity, transform and a brief blur are animated.

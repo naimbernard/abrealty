@@ -1,6 +1,6 @@
 /**
  * A fine line-drawing that traces in on hover/keyboard focus, in the
- * spirit of decorative wrought-iron balcony grillwork — not a generic
+ * spirit of decorative wrought-iron balcony grillwork - not a generic
  * box-shadow or scale effect. Pure CSS (stroke-dashoffset transition
  * driven by the parent's `group` hover/focus-within state); doubles as
  * the visible keyboard-focus treatment. Parent must have `class="group"`

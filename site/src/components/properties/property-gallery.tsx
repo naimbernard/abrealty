@@ -27,7 +27,7 @@ export function PropertyGallery({
             <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl bg-sand">
               <Image
                 src={src}
-                alt={`${title} — photo ${index + 1}`}
+                alt={`${title} - photo ${index + 1}`}
                 fill
                 sizes="(max-width: 1024px) 100vw, 60vw"
                 unoptimized={!isOptimizableImage(src)}

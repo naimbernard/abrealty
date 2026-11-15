@@ -22,7 +22,7 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    // Lenis drives a continuous rAF loop for the life of the page — starting
+    // Lenis drives a continuous rAF loop for the life of the page - starting
     // it a beat after mount keeps it from competing with hydration for
     // main-thread time during the window Lighthouse scores TBT/TTI in.
     if ("requestIdleCallback" in window) {

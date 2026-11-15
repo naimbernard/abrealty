@@ -6,7 +6,7 @@ const steps = [
   {
     key: "discover",
     title: "Discover",
-    body: "Share your budget, goals and must-haves — we translate them into a shortlist worth your time.",
+    body: "Share your budget, goals and must-haves - we translate them into a shortlist worth your time.",
   },
   {
     key: "shortlist",
@@ -21,7 +21,7 @@ const steps = [
   {
     key: "close",
     title: "Close",
-    body: "Transparent, legally sound closing — with Amar coordinating every step to a clean handover.",
+    body: "Transparent, legally sound closing - with Amar coordinating every step to a clean handover.",
   },
 ];
 

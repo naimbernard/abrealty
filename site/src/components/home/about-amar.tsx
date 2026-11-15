@@ -23,11 +23,11 @@ export function AboutAmar() {
           Amar Bernard
         </h2>
         <blockquote className="mt-6 border-l-2 border-gold pl-5 font-heading text-2xl leading-snug text-navy-deep italic">
-          &ldquo;Every property tells a story — I make sure it&rsquo;s a
+          &ldquo;Every property tells a story - I make sure it&rsquo;s a
           profitable one.&rdquo;
         </blockquote>
         <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-          At the heart of AB Realty is founder Amar Bernard — driven by a
+          At the heart of AB Realty is founder Amar Bernard - driven by a
           genuine passion for helping people find a place they can call home,
           and a belief that real estate is fundamentally about trust,
           relationships and lasting opportunity.
@@ -35,7 +35,7 @@ export function AboutAmar() {
         <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
           He built AB Realty on honesty, dedication and care, with a mission
           to make buying, selling or investing in Goa property transparent,
-          supportive and rewarding — treating every client, regardless of the
+          supportive and rewarding - treating every client, regardless of the
           size of their goals, with the same respect and attention.
         </p>
         <div className="mt-8">
