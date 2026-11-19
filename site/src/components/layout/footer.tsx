@@ -66,7 +66,17 @@ export function Footer() {
 
       <div className="-mx-6 flex flex-col gap-2 bg-navy-deep px-6 py-6 text-xs text-ivory/70 sm:-mx-14 sm:flex-row sm:justify-between sm:px-14">
         <span>Privacy Policy &nbsp;&nbsp;&nbsp; Accessibility Statement</span>
-        <span>AB Realty {new Date().getFullYear()}</span>
+        <span>
+          AB Realty {new Date().getFullYear()} · Developed by{" "}
+          <a
+            href="https://www.mavorracreative.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline-offset-2 hover:text-ivory hover:underline"
+          >
+            Mavorra Creative
+          </a>
+        </span>
       </div>
     </footer>
   );
